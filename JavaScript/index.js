@@ -26,7 +26,7 @@ function OnLoadGame() {
 // When Start Button/Retry Button is clicked
 function start() {
   count = 0; // Reset count
-  character.firstElementChild.setAttribute("src", "../Graphics/Home/Dino.gif"); // Make sure character is at running sprite
+  character.firstElementChild.setAttribute("src", "./Graphics/Home/Dino.gif"); // Make sure character is at running sprite
   cactus.style.display = "block"; // Show Cactus Element
   document.getElementById("score").style.display = "block"; // Show Score Element
   document.getElementById("StartGame").style.display = "none"; // Hide Button Element
@@ -81,7 +81,7 @@ function endGame() {
   scoreArr.push(score); // Store score in Array
   gameState = false; // Stop Game
   cactus.style.display = "none"; // Hides Cactus
-  character.firstElementChild.setAttribute("src", "../Graphics/Home/Dead.gif"); // Change Character to dead animation
+  character.firstElementChild.setAttribute("src", "./Graphics/Home/Dead.gif"); // Change Character to dead animation
   document.getElementById("score").style.display = "none"; // Hide Score element
   document.getElementById("StartGame").style.display = "block"; // Show Retry Button
   var highScore = scoreArr[0]; // For Loop to look for High Score
