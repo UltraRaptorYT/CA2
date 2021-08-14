@@ -1,0 +1,29 @@
+@charset "utf-8"; /* Encoding Charset*/
+
+/*
+  Table of Content
+1.  Img Banner
+2.  Body Styles
+*/
+
+/* ============
+    Img Banner
+   ============ */
+
+.imgbanner {
+  background: url(../Graphics/DAAA/DAAABANNER.jpg);
+  background-position: center 101px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+/* ============
+    Body Styles
+   ============ */
+
+.h2 {
+  font-family: edo;
+  background: var(--main-bg-color);
+  text-shadow: 2.5px 2.5px 0px black;
+}

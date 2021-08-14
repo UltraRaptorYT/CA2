@@ -1,0 +1,36 @@
+@charset "utf-8"; /* Encoding Charset*/
+
+/*
+  Table of Content
+1.  CCA Styles
+*/
+
+/* ============
+    CCA Styles
+   ============ */
+
+.h2 {
+  font-family: edo;
+  background: var(--main-bg-color);
+  text-shadow: 2.5px 2.5px 0px black;
+}
+
+.cca {
+  border: 2px black solid;
+}
+
+img[alt="SOCC"] {
+  background: #121212;
+}
+
+#CCA > div:hover {
+  transform-origin: 50% 50%;
+  transform-style: flat;
+  transform: scale(1.1);
+  transition: transform 0.2s linear;
+}
+
+#CCA > div {
+  transform: scale(1);
+  transition: transform 0.2s linear;
+}

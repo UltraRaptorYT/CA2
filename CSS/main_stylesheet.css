@@ -1,0 +1,130 @@
+@charset "utf-8"; /* Encoding Charset*/
+
+/*
+  Table of Content
+1.  Fonts
+2.  Reset Styles
+3.  Header Styles
+4.  Body Content Styles
+5.  More Info
+6.  Return Up
+*/
+
+/* =======
+    Fonts
+   ======= */
+
+/*
+Include Edo Font 
+• TTF type is a truetype file
+*/
+@font-face {
+  font-family: "Edo";
+  src: url(../Graphics/edo.ttf) format("truetype");
+}
+
+/*
+Include OpenSans Font
+• TTF type is a truetype file
+*/
+@font-face {
+  font-family: "OpenSans";
+  src: url(../Graphics/OpenSans-Regular.ttf) format("truetype");
+}
+
+/* ==============
+    Reset Styles
+   ============== */
+
+/* 
+*
+• Make word color black by default
+• Makes font OpenSans if Website does not support than it will do the following Arial, Helvetica, sans-serif
+• Make all box sizing include border box
+*/
+* {
+  color: black;
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* ===============
+    Header Styles
+   =============== */
+
+.sitelogo {
+  max-width: 75px;
+}
+
+.sitelogo a:focus {
+  outline: none;
+}
+
+a.sitetitle {
+  font-size: 20px;
+  text-align: center;
+  line-height: 0;
+  font-family: Edo;
+  text-shadow: 0.15em 0.075em hsla(0, 0%, 0%, 0.75);
+}
+
+/* =====================
+    Body Content Styles
+   ===================== */
+
+.bg-primary {
+  background-color: rgb(88, 163, 254) !important;
+}
+
+.h1 {
+  font-family: edo;
+}
+
+cite::before {
+  content: "  \2014\2002";
+}
+
+/* ===========
+    More Info
+   =========== */
+
+a svg {
+  width: 25px;
+  fill: white;
+}
+
+a.rounded-pill,
+.moreInfo {
+  gap: 10px;
+}
+
+.moreInfo a {
+  background-color: rgb(88, 163, 254) !important;
+}
+
+.moreInfo a:hover,
+.moreInfo a:focus {
+  background: var(--main-bg-color) !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.moreInfo a {
+  border: 2px black solid;
+}
+
+/* ===========
+    Return Up
+   =========== */
+
+#Return {
+  border: 2px black solid;
+  height: 45px;
+  width: 45px;
+  transition: opacity 0.3s ease;
+}
+
+div.fixed-bottom {
+  right: 0 !important;
+  left: auto;
+}

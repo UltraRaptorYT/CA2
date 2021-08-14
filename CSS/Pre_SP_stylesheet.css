@@ -1,0 +1,142 @@
+@charset "utf-8"; /* Encoding Charset*/
+
+/*
+  Table of Content
+1.  Timeline Layout
+2.  Timeline Styles
+3.  Timeline Line
+4.  Timeline Arrows
+5.  Img Filters
+*/
+
+/* =================
+    Timeline Layout
+   ================= */
+
+.timelinenav a {
+  background-color: rgb(88, 163, 254) !important;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.timelinenav {
+  gap: 10px;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+/* =================
+    Timeline Styles
+   ================= */
+
+.StartEnd {
+  z-index: 1000;
+  border: 2px solid black;
+  background: var(--main-bg-color);
+  font-family: edo;
+  text-shadow: 2.5px 2.5px 0px black;
+}
+
+.content {
+  border: 2px solid black;
+  border-radius: 20px;
+  background: var(--main-bg-color);
+}
+
+.h5:not(.footer) {
+  font-family: edo;
+  text-shadow: 2.5px 2.5px 0px black;
+  letter-spacing: 1px;
+}
+
+/* ===============
+    Timeline Line
+   =============== */
+
+.timeline-md::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-sm::after {
+  left: 16.5%;
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  margin-left: -3px;
+  z-index: 0;
+}
+
+/* =================
+    Timeline Arrows
+   ================= */
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 50%;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid black;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent transparent transparent black;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 50%;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid black;
+  border-width: 15px 15px 15px 0;
+  border-color: transparent black transparent transparent;
+}
+
+.arrow::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 50%;
+  width: 0;
+  z-index: 1;
+  left: 0;
+  border: medium solid black;
+  border-width: 15px 15px 15px 0;
+  border-color: transparent black transparent transparent;
+}
+
+/* =============
+    Img Filters
+   ============= */
+
+#LTA {
+  filter: brightness(110%);
+}
+
+#BWS {
+  filter: brightness(0.9);
+}
+
+#Japan {
+  filter: saturate(175%);
+}

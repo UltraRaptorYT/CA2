@@ -1,0 +1,102 @@
+@charset "utf-8"; /* Encoding Charset*/
+
+/*
+  Table of Content
+1.  Img Banner
+2.  Game Styles
+*/
+
+/* ============
+    Img Banner
+   ============ */
+
+.imgbanner {
+  background: var(--main-bg-color);
+  background-image: url(../Graphics/Background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* =============
+    Game Styles
+   ============= */
+
+#game {
+  border: 2px black solid;
+  background: url(../Graphics/Home/Desert.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+}
+
+#character {
+  overflow: hidden;
+  top: 187px;
+  height: 60px;
+  width: 80px;
+  left: -5px;
+  z-index: 1;
+}
+
+input[type="button"] {
+  border: 2px black solid;
+}
+
+.animate {
+  animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 187px;
+  }
+  30% {
+    top: 100px;
+  }
+  70% {
+    top: 100px;
+  }
+  100% {
+    top: 187px;
+  }
+}
+
+#StartGame input[type="button"]:hover {
+  background: var(--main-bg-color);
+}
+
+#cactus {
+  width: 50px;
+  top: 185px;
+  right: 0%;
+  animation: cactus 1s infinite normal linear;
+  z-index: 0;
+}
+
+@keyframes cactus {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+.display-4 {
+  font-family: edo;
+  right: 0;
+  font-size: 2rem;
+  white-space: nowrap;
+}
+
+#info {
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 50%;
+  transform-style: flat;
+  transform: translate(-50%, -50%);
+}

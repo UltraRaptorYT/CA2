@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      Title: My Experience in Poly and My Career Prospect
+      Author: Soh Hong Yu 
+      Date: August 6 2021
+      Filename: Feedback.html
+    -->
+    <!--To Be Viewed screen resolution of 1366 x 768-->
+    <!-- 
+      Image Credits 
+      Website Image Banner created by Soh Hong Yu
+    -->
+    <!--Setting up web info-->
+    <!--Charset-->
+    <meta charset="utf-8" />
+    <!--Viewport of device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--To Be Viewed screen resolution of 1366 x 768-->
+    <!--Description of Website-->
+    <meta
+      name="description"
+      content="My Experience in Poly and My Career Prospect"
+    />
+    <!--Title of Website-->
+    <title>Feedback📝</title>
+    <!--Icon for Website 16x16-->
+    <link rel="shortcut icon" href="../Graphics/WebSmallLogo.png" />
+    <!--Linking Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!--Linking CSS-->
+    <link rel="stylesheet" href="../CSS/main_stylesheet.css" />
+    <link rel="stylesheet" href="../CSS/main_layout.css" />
+    <link rel="stylesheet" href="../CSS/Feedback_stylesheet.css" />
+  </head>
+  <!--Start of Body-->
+  <!--onload attribute runs a JavaScript Function called "OnLoad()"-->
+  <body onload="OnLoad()">
+    <!--Header-->
+    <!--Fixed Top makes header fixed at the top of the screen no matter how far down user has scrolled down-->
+    <header class="fixed-top">
+      <!--? Nav-->
+      <!--navbar makes nav a horizontal flex-->
+      <!--nav-expand-md makes nav show content when it is at medium screen-->
+      <!--navbar-dark makes elements in the navbar white-->
+      <!--py-2 adds padding to the top and bottom by 0.5rem-->
+      <!--px-md-5 adds padding to the left and right by 3 rem when screen is medium size-->
+      <nav class="navbar navbar-expand-md navbar-dark py-2 px-md-5">
+        <!--navbar-brand for project name-->
+        <!--Hyperlink to YouTube Channel and open in new tab-->
+        <a
+          class="navbar-brand sitetitle"
+          href="https://www.youtube.com/channel/UCM4zdqvxMmRbaBNMs-kcAdA"
+          target="_blank"
+        >
+          <img
+            src="../Graphics/sitelogo.png"
+            class="rounded-circle img-fluid sitelogo"
+            alt="sitelogo"
+          />
+          PolyLife</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#NavBar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end py-2"
+          id="NavBar"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item rounded-pill">
+              <a class="nav-link text-center" href="../HTML/index.html">Home</a>
+            </li>
+            <li class="nav-item rounded-pill">
+              <a class="nav-link text-center" href="../HTML/Pre_SP.html"
+                >Before SP</a
+              >
+            </li>
+            <li class="nav-item rounded-pill">
+              <a class="nav-link text-center" href="../HTML/SP_EXP.html"
+                >SPerience</a
+              >
+            </li>
+            <li class="nav-item rounded-pill">
+              <a class="nav-link text-center" href="../HTML/Course.html"
+                >DAAA</a
+              >
+            </li>
+            <li class="nav-item rounded-pill active">
+              <a class="nav-link text-center" href="../HTML/Feedback.html"
+                >Feedback</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--Image Banner-->
+    <div class="imgbanner position-relative" id="Top">
+      <figure class="imgLeft figure m-0 position-absolute w-50">
+        <img
+          class="img-fluid"
+          src="../Graphics/Feedback/Heart.png"
+          alt="Heart"
+        />
+      </figure>
+      <!--Image Banner Text-->
+      <div class="text-white text-center position-absolute display-1">
+        Thank You<br />
+        For Visiting my site!
+      </div>
+      <figure class="imgRight figure m-0 position-absolute w-50">
+        <img class="img-fluid" src="../Graphics/Feedback/Rose.png" alt="Rose" />
+      </figure>
+      <a
+        href="#Scroll"
+        class="
+          position-absolute
+          fixed-bottom
+          text-center
+          mb-3
+          text-decoration-none
+        "
+        id="Scroll"
+      >
+        <p class="text-white">Scroll down</p>
+        <br />
+        <div class="scroll-down"></div>
+      </a>
+    </div>
+    <!--Content-->
+    <!--? Forms-->
+    <div class="container my-4">
+      <!--Start of Feedback Form-->
+      <fieldset>
+        <form class="mx-3 needs-validation" id="form" novalidate>
+          <!--Question 1-->
+          <!--? Form Group to group each question-->
+          <!--? Form Control styles for general appearance-->
+          <div id="qn1" class="form-group py-2">
+            <label for="name">Name: </label><br />
+            <input
+              type="text"
+              placeholder="Name"
+              class="form-control p-4 rounded-pill"
+              id="name"
+              required
+            />
+          </div>
+          <!--Question 2-->
+          <div id="qn2" class="form-group py-2">
+            <label for="email">Email Address: </label><br />
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="form-control p-4 rounded-pill"
+              id="email"
+              required
+            />
+            <p class="small form-text text-muted mb-0">
+              your email will be kept confidential
+            </p>
+          </div>
+          <!--Question 3-->
+          <div id="qn3" class="form-group py-2">
+            <label for="tel">Phone Number: </label><br />
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              class="form-control p-4 rounded-pill"
+              id="tel"
+              required
+              pattern="[0-9]{8}"
+            />
+          </div>
+          <!--Question 4-->
+          <div id="qn4" class="form-group py-2">
+            <label>How would you rate your experience?</label><br />
+            <div
+              class="
+                rating1
+                d-flex
+                flex-row-reverse
+                justify-content-around
+                align-items-center
+                p-0
+              "
+            >
+              <!--elements are in reversed order, to allow "previous sibling selectors" in CSS-->
+              <input
+                type="radio"
+                name="rating1"
+                value="5"
+                id="5"
+                class="d-none"
+                required
+              /><label
+                for="5"
+                class="position-relative text-black w-100 text-center"
+                >☆</label
+              >
+              <input
+                type="radio"
+                name="rating1"
+                value="4"
+                id="4"
+                class="d-none"
+              /><label
+                for="4"
+                class="position-relative text-black w-100 text-center"
+                >☆</label
+              >
+              <input
+                type="radio"
+                name="rating1"
+                value="3"
+                id="3"
+                class="d-none"
+              /><label
+                for="3"
+                class="position-relative text-black w-100 text-center"
+                >☆</label
+              >
+              <input
+                type="radio"
+                name="rating1"
+                value="2"
+                id="2"
+                class="d-none"
+              /><label
+                for="2"
+                class="position-relative text-black w-100 text-center"
+                >☆</label
+              >
+              <input
+                type="radio"
+                name="rating1"
+                value="1"
+                id="1"
+                class="d-none"
+              /><label
+                for="1"
+                class="position-relative text-black w-100 text-center"
+                >☆</label
+              >
+            </div>
+          </div>
+          <!--Question 5-->
+          <div id="qn5" class="form-group py-2">
+            <label for="Ranking"
+              >How likely are you to recommend my website to a friend?</label
+            ><br />
+            <div class="d-flex align-items-center justify-content-center my-2">
+              <label for="Ranking" class="m-0">0</label>
+              <input
+                type="range"
+                class="form-control-range mx-4"
+                id="Ranking"
+                min="0"
+                max="10"
+                value="5"
+                step="1"
+              />
+              <label for="Ranking" class="m-0">10</label>
+            </div>
+          </div>
+          <!--Question 6-->
+          <div id="qn6" class="form-group py-2">
+            <label for="section">Which section interests you the most?</label
+            ><br />
+            <select
+              name="section"
+              id="section"
+              class="form-control rounded-pill"
+              required
+            >
+              <option value="" selected>Section</option>
+              <option value="Home">Home</option>
+              <option value="Before_SP">Before SP</option>
+              <option value="SPerience">SPerience</option>
+              <option value="DAAA">DAAA</option>
+            </select>
+          </div>
+          <!--Question 7-->
+          <div class="choice form-group py-2" id="qn7">
+            <label>Will You Join SP?</label>
+            <div class="custom-control custom-radio">
+              <input
+                type="radio"
+                id="yes"
+                name="SP"
+                value="yes"
+                class="custom-control-input form-check-input"
+                required
+              />
+              <label class="custom-control-label" for="yes">Yes</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input
+                type="radio"
+                id="no"
+                name="SP"
+                value="no"
+                class="custom-control-input form-check-input"
+              />
+              <label class="custom-control-label" for="no">No</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input
+                type="radio"
+                id="maybe"
+                name="SP"
+                value="maybe"
+                class="custom-control-input form-check-input"
+              />
+              <label class="custom-control-label" for="maybe">Maybe</label>
+            </div>
+          </div>
+          <!--Question 8-->
+          <div id="qn8" class="form-group py-2">
+            <label for="problems"
+              >Any problem you faced exploring the site?</label
+            >
+            <textarea
+              id="problems"
+              rows="4"
+              cols="50"
+              name="problems"
+              class="form-control p-4 textarea"
+              placeholder="Enter problems here"
+            ></textarea>
+          </div>
+          <!--Question 9-->
+          <div id="qn9" class="form-group py-2">
+            <label for="queries">Any queries or feedback?</label>
+            <textarea
+              id="queries"
+              rows="4"
+              cols="50"
+              name="queries"
+              class="form-control p-4 textarea"
+              placeholder="Enter queries or feedback here"
+            ></textarea>
+          </div>
+          <!--Reset and Submit Buttons-->
+          <div
+            class="
+              d-flex
+              justify-content-around
+              align-items-center
+              form-group
+              my-4
+            "
+            id="qn10"
+          >
+            <button class="btn rounded-pill text-white" type="reset" id="reset">
+              Cancel
+            </button>
+            <input
+              class="btn rounded-pill text-white"
+              type="submit"
+              id="submit"
+              onclick="submitForm()"
+              value="Submit"
+            />
+          </div>
+        </form>
+      </fieldset>
+      <!--End of Form-->
+    </div>
+    <div class="fixed-bottom m-3 m-lg-5">
+      <a href="#Top" class="bg-primary rounded-circle p-2 d-block" id="Return">
+        <!--UpArrow SVG for Return to Top Button-->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="bi bi-capslock"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM14.346 8.5 8 1.731 1.654 8.5H4.5a1 1 0 0 1 1 1v1h5v-1a1 1 0 0 1 1-1h2.846zm-9.846 5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1zm6 0h-5v1h5v-1z"
+          />
+        </svg>
+      </a>
+    </div>
+    <!--Footer-->
+    <footer>
+      <!--h5 makes text a heading 5 using Bootstrap-->
+      <!--pt-2 adds 0.5rem of padding to the top of the element-->
+      <!--text-center centers text-->
+      <!--m-0 removes all margin-->
+      <p class="h5 pt-2 m-0 text-white text-center">Contact Me:</p>
+      <!--mt-1 adds margin to the top by 0.25rem-->
+      <!--mb-2 adds padding to the bottom by 0.5rem-->
+      <!--d-flex makes footer a display flex element-->
+      <!--justify-content-center centers the content horizontally-->
+      <!--align-items-center centers the content vertically-->
+      <div
+        class="
+          contactme
+          mt-1
+          mb-2
+          d-flex
+          justify-content-center
+          align-items-center
+        "
+      >
+        <!--Instagram-->
+        <a href="https://www.instagram.com/therealultraraptor/" target="_blank">
+          <!--SVG For Icons-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="bi bi-instagram"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+            />
+          </svg>
+        </a>
+        <!--YouTube-->
+        <a
+          href="https://www.youtube.com/channel/UCM4zdqvxMmRbaBNMs-kcAdA"
+          target="_blank"
+        >
+          <!--SVG For Icons-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="bi bi-youtube"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+            />
+          </svg>
+        </a>
+        <!--Facebook-->
+        <a
+          href="https://www.facebook.com/profile.php?id=100008438923971"
+          target="_blank"
+        >
+          <!--SVG For Icons-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="bi bi-facebook"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+            />
+          </svg>
+        </a>
+        <!--Email-->
+        <a href="mailto:sohhongyu@gmail.com">
+          <!--SVG For Icons-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="bi bi-envelope"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"
+            />
+          </svg>
+        </a>
+      </div>
+      <!--Copyright Text-->
+      <!--h5 makes text a heading 5 using Bootstrap-->
+      <!--pb-2 adds 0.5rem of padding to the bottom of the element-->
+      <!--text-white make text white-->
+      <!--text-center centers text-->
+      <p class="h5 pb-2 text-white text-center">&copy; 2021 Hong Yu</p>
+    </footer>
+    <!--Linking Bootstrap-->
+    <script src="../JavaScript/main.js"></script>
+    <script src="../JavaScript/Feedback.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

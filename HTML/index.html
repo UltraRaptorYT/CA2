@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+        Title: My Experience in Poly and My Career Prospect
+        Author: Soh Hong Yu 
+        Date: August 6 2021
+        Filename: index.html
+      -->
+    <!--To Be Viewed screen resolution of 1366 x 768-->
+    <!-- 
+        Image Credits 
+        Website Image Banner from Color Space
+        Pokémon Image Credits from https://wallpapersafari.com/w/Cm7f8b
+        Minecraft Image Credits from https://www.minecraft.net/en-us/updates/buzzy-bees
+        Dino Sprite from https://arks.itch.io/dino-characters
+        Desert Backdrop from https://www.slynyrd.com/blog/2019/11/12/pixelblog-23-parallax-scrolling
+        Cactus Sprite drawn by Soh Hong Yu
+      -->
+    <!--Setting up web info-->
+    <!--Charset-->
+    <meta charset="utf-8" />
+    <!--Viewport of device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Description of Website-->
+    <meta
+      name="description"
+      content="My Experience in Poly and My Career Prospect"
+    />
+    <!--Title of Website-->
+    <title>Home🏠</title>
+    <!--Icon for Website 16x16-->
+    <link rel="shortcut icon" href="../Graphics/WebSmallLogo.png" />
+    <!--Linking Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!--Linking CSS-->
+    <link rel="stylesheet" href="../CSS/main_layout.css" />
+    <link rel="stylesheet" href="../CSS/main_stylesheet.css" />
+    <link rel="stylesheet" href="../CSS/index_stylesheet.css" />
+  </head>
+  <!--Start of Body-->
+  <!--onload attribute runs a JavaScript Function called "OnLoad()"-->
+  <body onload="OnLoad();OnLoadGame()">
+    <!--Header-->
+    <!--Fixed Top makes header fixed at the top of the screen no matter how far down user has scrolled down-->
+    <header class="fixed-top">
+      <!--? Nav-->
+      <!--navbar makes nav a horizontal flex-->
+      <!--nav-expand-md makes nav show content when it is at medium screen-->
+      <!--navbar-dark makes elements in the navbar white-->
+      <!--py-2 adds padding to the top and bottom by 0.5rem-->
+      <!--px-md-5 adds padding to the left and right by 3 rem when screen is medium size-->
+      <nav class="navbar navbar-expand-md navbar-dark py-2 px-md-5">
+        <!--navbar-brand for project name-->
+        <!--Hyperlink to YouTube Channel and open in new tab-->
+        <a
+          class="navbar-brand sitetitle"
+          href="https://www.youtube.com/channel/UCM4zdqvxMmRbaBNMs-kcAdA"
+          target="_blank"
+        >
+          <!--rounded-circle makes image have border-radius: 50%-->
+          <!--img-fluid makes image responsive-->
+          <img
+            src="../Graphics/sitelogo.png"
+            class="rounded-circle img-fluid sitelogo"
+            alt="sitelogo"
+          />
+          PolyLife</a
+        >
+        <!--Toggle Navbar mobile menu button-->
+        <!--navbar-togglers bootstrap collapsing plugin-->
+        <!--data-toggle sets the state of the navbar whether it is toggled or collapsed-->
+        <!--data target will modify which element with the data from data-toggle-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#NavBar"
+        >
+          <!--Navbar 3 Menu Lines-->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--collapse hides the navbar away-->
+        <!--navbar-collapse makes navbar open from top down instead of left & right-->
+        <!--justify-content-end shifts navbar to the right side of the screen-->
+        <!--py-2 adds padding to the top and bottom by 0.5rem-->
+        <div
+          class="collapse navbar-collapse justify-content-end py-2"
+          id="NavBar"
+        >
+          <!--navbar-nav a flex display which change from flex-direction row to flex-direction column 
+              depending on the screen size-->
+          <ul class="navbar-nav">
+            <!--nav-item items of the navbar-->
+            <!--active current html page-->
+            <!--rounded-pill gives the pill shaped buttons-->
+            <li class="nav-item active rounded-pill">
+              <!--nav-link hyperlink to the next pages-->
+              <!--text-center center words-->
+              <a class="nav-link text-center" href="../HTML/index.html">Home</a>
+            </li>
+            <li class="nav-item rounded-pill">
+              <a class="nav-link text-center" href="../HTML/Pre_SP.html"
+                >Before SP</a
+              >
+            </li>
+            <li class="nav-item rounded-pill">
+              <a class="nav-link text-center" href="../HTML/SP_EXP.html"
+                >SPerience</a
+              >
+            </li>
+            <li class="nav-item rounded-pill">
+              <a class="nav-link text-center" href="../HTML/Course.html"
+                >DAAA</a
+              >
+            </li>
+            <li class="nav-item rounded-pill">
+              <a class="nav-link text-center" href="../HTML/Feedback.html"
+                >Feedback</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--Image Banner-->
+    <!--position-relative to position things relative-->
+    <div class="imgbanner position-relative" id="Top">
+      <!--position-absolute for positioning items absolutely-->
+      <!--w-50 set width to 50%-->
+      <!--m-0 removes all margin-->
+      <figure class="imgLeft figure m-0 position-absolute w-50">
+        <img
+          class="img-fluid"
+          src="../Graphics/Home/AstronautLeft.png"
+          alt="AstronautLeft"
+        />
+      </figure>
+      <!--position-absolute for positioning items absolutely-->
+      <!--text-white set text color to white-->
+      <!--text-center centers text-->
+      <!--display-1 size of words-->
+      <div class="text-white text-center position-absolute display-1">
+        Singapore Poly
+      </div>
+      <!--position-absolute for positioning items absolutely-->
+      <!--w-50 set width to 50%-->
+      <!--m-0 removes all margin-->
+      <figure class="imgRight figure m-0 position-absolute w-50">
+        <img
+          class="img-fluid"
+          src="../Graphics/Home/AstronautRight.png"
+          alt="AstronautRight"
+        />
+      </figure>
+    </div>
+    <!--container makes a container which marginLeft-auto marginRight-auto-->
+    <!--my-md-5 adds 3rem of margin to top and bottom when screen is bigger than 768px-->
+    <!--my-3 adds 1rem of margin to top and bottom-->
+    <div class="container my-md-5 my-3">
+      <!--row makes a flexible flex box-->
+      <!--align-items-center centers the content vertically-->
+      <!--justify-content-center centers the content horizontally-->
+      <div class="row align-items-center justify-content-center">
+        <!--figure to make a figure html-->
+        <!--col-12 make element span 12 columns-->
+        <!--col-md-2 make element span 2 columns when screen is bigger than 768px-->
+        <!--w-50 set width to 50%-->
+        <!--m-0 removes all margin-->
+        <!--p-3 adds 1rem of padding around the element-->
+        <figure class="figure col-12 col-md-2 w-50 m-0 p-3">
+          <!--rounded-circle rounds the image and make border-radius: 50%;-->
+          <!--img-fluid keeps the aspect ratio of the image-->
+          <img
+            src="../Graphics/Home/Profile_Pic.png"
+            class="rounded-circle img-fluid"
+            alt="ProfilePic"
+          />
+          <!--text-center centers text-->
+          <!--d-none hides figcaption-->
+          <figcaption class="text-center d-none">Image of Myself</figcaption>
+        </figure>
+        <!--Self Introduction-->
+        <!--col-12 make element span 12 columns-->
+        <!--col-md-10 make element span 10 columns when screen is bigger than 768px-->
+        <!--p-3 adds 1rem of padding around the element-->
+        <div class="col-12 col-md-10 p-3">
+          <!--m-0 removes all margin-->
+          <p class="m-0">
+            I am Soh Hong Yu. I am fascinated by neural network and machine
+            learning since I was young. I enjoy developing apps like golf, 3D
+            models and even coded Arduino Robots. I also set up a YouTube
+            channel where I post Scratch tutorials and even set up my own
+            website.
+            <br /><br />Being the president of my school’s Robotics Club, I have
+            participated and won many competitions example, 1st runner up for
+            Maze Robot in International Microbit Challenge, Top 7 for Sumo Robot
+            in World Robot Games. <br /><br />My pursuit of AI stems strongly
+            from my passion for utilising technology to transform our lives. I
+            want to use my knowledge to make an AI that can help in our daily
+            homes and integrate AI into our daily everyday life!
+          </p>
+        </div>
+        <!--End of Row-->
+      </div>
+      <!--text-center centers text-->
+      <!--h1 makes text a heading 1 using Bootstrap-->
+      <!--m-3 adds 1rem of margin all sides of the element-->
+      <p class="text-center h1 m-3">My Values</p>
+      <!--row makes a flexible flex box-->
+      <!--align-items-center centers the content vertically-->
+      <!--justify-content-center centers the content horizontally-->
+      <!--py-2 adds padding to the top and bottom by 0.5rem-->
+      <!--px-1 adds padding to the left and right by 0.25rem-->
+      <!--px-md-5 adds padding to the left and right by 3rem when screen is bigger than 768px-->
+      <!--mx-1 adds margin to the left and right by 0.25rem-->
+      <!--mx-md-5 adds margin to the left and right by 3rem when screen is bigger than 768px-->
+      <div
+        class="
+          row
+          align-items-center
+          justify-content-center
+          py-2
+          px-1 px-md-5
+          mx-1 mx-md-5
+        "
+      >
+        <!--blockquote class for blockquote element-->
+        <blockquote class="blockquote">
+          <!--SVG for Quote Icon-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-chat-square-quote-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm7.194 2.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 4C4.776 4 4 4.746 4 5.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 7.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 4c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"
+            />
+          </svg>
+          If you want to win in the 21st century, you have to empower others,
+          making sure other people are better than you are. Then you will be
+          successful.
+          <br />
+          <!--blockquote-footer ends the blockquote-->
+          <!--ml-5 adds 3rem margin left-->
+          <!--text-muted give the the text a grey font color-->
+          <cite class="blockquote-footer ml-5 text-muted">Jack Ma</cite>
+        </blockquote>
+        <!--Explanation of Quote-->
+        <p>
+          I believe that by learning and understanding our technological
+          advancement and even pursuing our own technological breakthrough is
+          important. Jack Ma’s inspirational quote has inspired me to empower
+          others and learn with one another for greater insights on
+          technological advancements.
+        </p>
+        <!--Volunteer Work-->
+        <p>
+          I also have a strong belief in contributing back to society. Hence, I
+          am actively involved in VIA projects. In 2019, I organized a Children
+          carnival for a class VIA where we taught them dance and crafts. There
+          were also many other events which I helped to plan, for example
+          Mother's Day in collaboration with LTA to give out roses to all
+          mothers, distribution of goodie bags to the less privileged and
+          volunteering for Home Refresh at Blossom World Society. Hence, I am
+          able to empathize with people and have the capability to work with
+          different people.
+        </p>
+      </div>
+      <!--My Personality-->
+      <!--text-center centers text-->
+      <!--h1 makes text a heading 1 using Bootstrap-->
+      <!--m-3 adds 1rem of margin all sides of the element-->
+      <p class="text-center h1 m-3">My Personality</p>
+      <!--row makes a flexible flex box-->
+      <!--align-items-center centers the content vertically-->
+      <!--justify-content-center centers the content horizontally-->
+      <!--py-2 adds padding to the top and bottom by 0.5rem-->
+      <!--px-1 adds padding to the left and right by 0.25rem-->
+      <!--px-md-5 adds padding to the left and right by 3rem when screen is bigger than 768px-->
+      <!--mx-1 adds margin to the left and right by 0.25rem-->
+      <!--mx-md-5 adds margin to the left and right by 3rem when screen is bigger than 768px-->
+      <div class="row align-items-center py-2 px-1 px-md-5 mx-1 mx-md-5">
+        <!--h2 makes text a heading 2 using Bootstrap-->
+        <!--text-left align text to the left-->
+        <!--font-weight-bold makes words bold-->
+        <p class="h2 text-left font-weight-bold">ISFJ-T</p>
+        <p>
+          I am supportive of other people and I am a positive and enthusiastic
+          person. I would like to think that I am good to be around. I am a very
+          caring and joyful person, I always strive to help my friends when they
+          are in need and never let them down.
+        </p>
+      </div>
+      <!--My Interest-->
+      <!--text-center centers text-->
+      <!--h1 makes text a heading 1 using Bootstrap-->
+      <!--m-3 adds 1rem of margin all sides of the element-->
+      <p class="text-center h1 m-3">My Interests</p>
+      <!--? Layout of content-->
+      <!--row makes a flexible flex box-->
+      <!--align-items-center centers the content vertically-->
+      <!--py-2 adds padding to the top and bottom by 0.5rem-->
+      <!--px-1 adds padding to the left and right by 0.25rem-->
+      <!--px-md-5 adds padding to the left and right by 3rem when screen is bigger than 768px-->
+      <!--mx-1 adds margin to the left and right by 0.25rem-->
+      <!--mx-md-5 adds margin to the left and right by 3rem when screen is bigger than 768px-->
+      <div class="row py-2 px-1 px-md-5 mx-1 mx-md-5 align-items-center">
+        <figure class="figure m-0 order-first order-lg-last col-lg-3 col-12">
+          <!--rounded-circle rounds the image and make border-radius: 50%;-->
+          <!--img-fluid keeps the aspect ratio of the image-->
+          <img
+            src="../Graphics/Home/Pokemon.jpg"
+            class="rounded-circle img-fluid"
+            alt="Pokémon"
+          />
+          <!--text-center centers text-->
+          <figcaption class="text-center">Pokémon</figcaption>
+        </figure>
+        <!--col-12 make element span 12 columns-->
+        <!--col-lg-9 make element span 9 columns when screen is bigger than 992px-->
+        <!--order-last change the order of the element in flex box-->
+        <!--order-lg-first change the order of the element in flex box when screen is bigger than 992px-->
+        <!--py-4 adds padding to the top and bottom by 1.5rem-->
+        <!--p-lg-0 remove padding around element-->
+        <div class="col-12 col-lg-9 order-last order-lg-first py-4 p-lg-0">
+          <!--h2 makes text a heading 2 using Bootstrap-->
+          <!--text-left align text to the left-->
+          <!--font-weight-bold makes words bold-->
+          <p class="h2 text-left font-weight-bold">Pokémon</p>
+          <p>
+            Since young, I have been watching the Pokémon Anime and fall in love
+            with Pokémon. Pokémon has been a part of my life for a long time!
+            From Collecting Pokémon Figurine to Playing Pokémon, Pokémon has
+            been a part of my life since young! <br /><br />Favorite Pokémon:
+            Rowlet
+          </p>
+        </div>
+      </div>
+      <!--row makes a flexible flex box-->
+      <!--align-items-center centers the content vertically-->
+      <!--py-2 adds padding to the top and bottom by 0.5rem-->
+      <!--px-1 adds padding to the left and right by 0.25rem-->
+      <!--px-md-5 adds padding to the left and right by 3rem when screen is bigger than 768px-->
+      <!--mx-1 adds margin to the left and right by 0.25rem-->
+      <!--mx-md-5 adds margin to the left and right by 3rem when screen is bigger than 768px-->
+      <div class="row py-2 px-1 px-md-5 mx-1 mx-md-5 align-items-center">
+        <figure class="figure m-0 order-first col-lg-3 col-12">
+          <!--rounded-circle rounds the image and make border-radius: 50%;-->
+          <!--img-fluid keeps the aspect ratio of the image-->
+          <img
+            src="../Graphics/Home/Minecraft.jpg"
+            class="rounded-circle img-fluid"
+            alt="Minecraft"
+          />
+          <!--text-center centers text-->
+          <figcaption class="text-center">Minecraft</figcaption>
+        </figure>
+        <!--col-12 make element span 12 columns-->
+        <!--col-lg-9 make element span 9 columns when screen is bigger than 992px-->
+        <!--order-last change the order of the element in flex box-->
+        <!--py-4 adds padding to the top and bottom by 1.5rem-->
+        <!--p-lg-0 remove padding around element-->
+        <div class="col-12 col-lg-9 order-last py-4 p-lg-0">
+          <!--h2 makes text a heading 2 using Bootstrap-->
+          <!--text-left align text to the left-->
+          <!--font-weight-bold makes words bold-->
+          <p class="h2 text-left font-weight-bold">Minecraft</p>
+          <p>
+            I have been playing Minecraft since 2015 and til now I play
+            Minecraft with my friends from DAAA and have a Minecraft Server
+            together! Minecraft helped me improve my technical skills through
+            coding using Raspberry Pi and Modding and help me develop Creatively
+            through the building in Minecraft.
+          </p>
+        </div>
+      </div>
+      <!--Game-->
+      <!--? JavaScript-->
+      <!--w-100 width 100%-->
+      <!--pb-5 adds 3rem to bottom padding-->
+      <!--onclick run jump() function-->
+      <div class="w-100 pb-5" onclick="jump()">
+        <!--text-center centers text-->
+        <!--h1 makes text a heading 1 using Bootstrap-->
+        <!--m-3 adds 1rem of margin all sides of the element-->
+        <p class="text-center h1 m-3">Games</p>
+        <!--row makes a flexible flex box-->
+        <!--align-items-center centers the content vertically-->
+        <!--py-2 adds padding to the top and bottom by 0.5rem-->
+        <!--px-1 adds padding to the left and right by 0.25rem-->
+        <!--px-md-5 adds padding to the left and right by 3rem when screen is bigger than 768px-->
+        <!--mx-1 adds margin to the left and right by 0.25rem-->
+        <!--justify-content-center centers the content horizontally-->
+        <div
+          class="
+            row
+            align-items-center
+            py-2
+            px-1 px-md-5
+            mx-1 mx-md-5
+            justify-content-center
+          "
+        >
+          <!--w-100 width 100%-->
+          <!--lead makes words stands out from regular paragraphs-->
+          <p class="w-100 lead">
+            I played and made games myself. Like
+            <!--text-body change words to black-->
+            <!--font-weight-bold makes words bold-->
+            <u
+              ><a
+                href="https://www.coregames.com/games/777c6c/blazing-inferno"
+                target="_blank"
+                class="text-body font-weight-bold"
+                >Blazing Inferno</a
+              ></u
+            >
+            and
+            <!--text-body change words to black-->
+            <!--font-weight-bold makes words bold-->
+            <u
+              ><a
+                href="https://www.coregames.com/games/127932/frosty-snowball"
+                target="_blank"
+                class="text-body font-weight-bold"
+                >Freezing Frost</a
+              ></u
+            >
+            . Here is a mini Dinosaur Run Game created using JavaScript.
+          </p>
+          <br />
+          <!--text-center centers text-->
+          <!--font-weight-bold makes words bold-->
+          <!--m-0 removes margin from all sides of the element-->
+          <!--text-uppercase makes text uppercase-->
+          <!--font-italic makes words italic-->
+          <p class="text-center font-weight-bold m-0">
+            Click screen to <b class="font-italic text-uppercase">Jump</b>
+          </p>
+        </div>
+        <!--container makes a container which marginLeft-auto marginRight-auto-->
+        <!--position-relative to position things relative-->
+        <div class="container position-relative" id="game">
+          <!--w-100 width 100%-->
+          <!--h-100 height 100%-->
+          <div class="h-100 w-100" id="StartGame">
+            <!--position-absolute for positioning items absolutely-->
+            <div class="position-absolute" id="info">
+              <!--onclick start() function will be invoked-->
+              <!--bg-primary makes background blue-->
+              <!--p-2 adds padding to all side of element by 0.5rem-->
+              <!--rounded-pill gives the pill shaped buttons-->
+              <!--text-center center words-->
+              <!--text-white make text white-->
+              <!--d-block makes button a display block element-->
+              <!--mx-auto automatically adds margin to the left and right of the element-->
+              <!--px-4 adds padding to the left and right by 1.5rem-->
+              <input
+                type="button"
+                value="Start"
+                onclick="start()"
+                class="
+                  bg-primary
+                  p-2
+                  rounded-pill
+                  text-center text-white
+                  d-block
+                  mx-auto
+                  px-4
+                "
+              />
+            </div>
+          </div>
+          <!--position-absolute for positioning items absolutely-->
+          <div id="character" class="position-absolute">
+            <!--w-100 width 100%-->
+            <!--img-fluid keeps the aspect ratio of the image-->
+            <img
+              src="../Graphics/Home/Dino.gif"
+              class="w-100 img-fluid"
+              alt="Dinosaur"
+            />
+          </div>
+          <!--position-absolute for positioning items absolutely-->
+          <div id="cactus" class="position-absolute">
+            <!--w-100 width 100%-->
+            <!--img-fluid keeps the aspect ratio of the image-->
+            <img
+              src="../Graphics/Home/Cactus.png"
+              class="w-100 img-fluid"
+              alt="Cactus"
+            />
+          </div>
+          <!--position-absolute for positioning items absolutely-->
+          <!--display-4 size of words-->
+          <!--text-body change words to black-->
+          <!--font-weight-normal makes words normal-->
+          <!--px-4 adds padding to the left and right by 1rem-->
+          <div
+            id="score"
+            class="
+              position-absolute
+              display-4
+              text-body
+              font-weight-normal
+              px-3
+            "
+          >
+            0
+          </div>
+        </div>
+      </div>
+      <!--More About Myself-->
+      <!--text-center centers text-->
+      <!--h1 makes text a heading 1 using Bootstrap-->
+      <!--m-3 adds 1rem of margin all sides of the element-->
+      <p class="text-center h1 m-3">More About Myself</p>
+      <!--row makes a flexible flex box-->
+      <!--align-items-center centers the content vertically-->
+      <!--py-2 adds padding to the top and bottom by 0.5rem-->
+      <!--px-1 adds padding to the left and right by 0.25rem-->
+      <!--px-md-5 adds padding to the left and right by 3rem when screen is bigger than 768px-->
+      <!--mx-1 adds margin to the left and right by 0.25rem-->
+      <!--justify-content-center centers the content horizontally-->
+      <div
+        class="
+          row
+          align-items-center
+          py-2 py-md-4
+          px-1 px-md-5
+          mx-1 mx-md-5
+          justify-content-around
+          moreInfo
+        "
+      >
+        <!--bg-primary makes background blue-->
+        <!--rounded-pill gives the pill shaped buttons-->
+        <!--p-2 adds padding to all side of element by 1rem-->
+        <!--rounded-pill gives the pill shaped buttons-->
+        <!--d-flex makes button a display flex element-->
+        <!--justify-content-center centers the content horizontally-->
+        <!--align-items-center centers the content vertically-->
+        <!--col-12 make element span 12 columns-->
+        <!--col-md-3 make element span 3 columns when screen is bigger than 768px-->
+        <a
+          class="
+            bg-primary
+            p-3
+            rounded-pill
+            d-flex
+            justify-content-center
+            align-items-center
+            col-12 col-md-3
+          "
+          href="http://thefutureoftech.ezyro.com/achievements/"
+          target="_blank"
+        >
+          <!--m-0 removes all margin-->
+          <!--text-white make text white-->
+          <p class="m-0 text-white">Certificates</p>
+          <!--SVG For Icons-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="bi bi-card-text"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"
+            ></path>
+            <path
+              d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"
+            ></path>
+          </svg>
+        </a>
+        <!--bg-primary makes background blue-->
+        <!--rounded-pill gives the pill shaped buttons-->
+        <!--p-2 adds padding to all side of element by 1rem-->
+        <!--d-flex makes button a display flex element-->
+        <!--justify-content-center centers the content horizontally-->
+        <!--align-items-center centers the content vertically-->
+        <!--col-12 make element span 12 columns-->
+        <!--col-md-3 make element span 3 columns when screen is bigger than 768px-->
+        <a
+          class="
+            bg-primary
+            p-3
+            rounded-pill
+            d-flex
+            justify-content-center
+            align-items-center
+            col-12 col-md-3
+          "
+          href="http://thefutureoftech.ezyro.com/projects/"
+          target="_blank"
+        >
+          <!--m-0 removes all margin-->
+          <!--text-white make text white-->
+          <p class="m-0 text-white">Projects</p>
+          <!--SVG For Icons-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="bi bi-controller"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z"
+            ></path>
+            <path
+              d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"
+            ></path>
+          </svg>
+        </a>
+        <!--bg-primary makes background blue-->
+        <!--rounded-pill gives the pill shaped buttons-->
+        <!--p-2 adds padding to all side of element by 1rem-->
+        <!--d-flex makes button a display flex element-->
+        <!--justify-content-center centers the content horizontally-->
+        <!--align-items-center centers the content vertically-->
+        <!--col-12 make element span 12 columns-->
+        <!--col-md-3 make element span 3 columns when screen is bigger than 768px-->
+
+        <a
+          class="
+            bg-primary
+            p-3
+            rounded-pill
+            d-flex
+            justify-content-center
+            align-items-center
+            col-12 col-md-3
+          "
+          href="https://www.youtube.com/channel/UCM4zdqvxMmRbaBNMs-kcAdA"
+          target="_blank"
+        >
+          <!--m-0 removes all margin-->
+          <!--text-white make text white-->
+          <p class="m-0 text-white">YouTube</p>
+          <!--SVG For Icons-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="bi bi-youtube"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="fixed-bottom m-3 m-lg-5">
+      <a href="#Top" class="bg-primary rounded-circle p-2 d-block" id="Return">
+        <!--UpArrow SVG for Return to Top Button-->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="bi bi-capslock"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM14.346 8.5 8 1.731 1.654 8.5H4.5a1 1 0 0 1 1 1v1h5v-1a1 1 0 0 1 1-1h2.846zm-9.846 5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1zm6 0h-5v1h5v-1z"
+          />
+        </svg>
+      </a>
+    </div>
+    <!--Footer-->
+    <footer>
+      <!--h5 makes text a heading 5 using Bootstrap-->
+      <!--pt-2 adds 0.5rem of padding to the top of the element-->
+      <!--text-center centers text-->
+      <!--m-0 removes all margin-->
+      <p class="h5 pt-2 m-0 text-white text-center">Contact Me:</p>
+      <!--mt-1 adds margin to the top by 0.25rem-->
+      <!--mb-2 adds padding to the bottom by 0.5rem-->
+      <!--d-flex makes footer a display flex element-->
+      <!--justify-content-center centers the content horizontally-->
+      <!--align-items-center centers the content vertically-->
+      <div
+        class="
+          contactme
+          mt-1
+          mb-2
+          d-flex
+          justify-content-center
+          align-items-center
+        "
+      >
+        <!--Instagram-->
+        <a href="https://www.instagram.com/therealultraraptor/" target="_blank">
+          <!--SVG For Icons-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="bi bi-instagram"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+            />
+          </svg>
+        </a>
+        <!--YouTube-->
+        <a
+          href="https://www.youtube.com/channel/UCM4zdqvxMmRbaBNMs-kcAdA"
+          target="_blank"
+        >
+          <!--SVG For Icons-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="bi bi-youtube"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+            />
+          </svg>
+        </a>
+        <!--Facebook-->
+        <a
+          href="https://www.facebook.com/profile.php?id=100008438923971"
+          target="_blank"
+        >
+          <!--SVG For Icons-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="bi bi-facebook"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+            />
+          </svg>
+        </a>
+        <!--Email-->
+        <a href="mailto:sohhongyu@gmail.com">
+          <!--SVG For Icons-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="bi bi-envelope"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"
+            />
+          </svg>
+        </a>
+      </div>
+      <!--Copyright Text-->
+      <!--h5 makes text a heading 5 using Bootstrap-->
+      <!--pb-2 adds 0.5rem of padding to the bottom of the element-->
+      <!--text-white make text white-->
+      <!--text-center centers text-->
+      <p class="h5 pb-2 text-white text-center">&copy; 2021 Hong Yu</p>
+    </footer>
+    <!--Linking JavaScript Files-->
+    <script src="../JavaScript/main.js"></script>
+    <script src="../JavaScript/index.js"></script>
+    <!--Linking Bootstrap-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
